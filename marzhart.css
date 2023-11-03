@@ -1,0 +1,127 @@
+body{
+	text-align: center;
+	width: 100%;
+	height: auto;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: #9932e8;
+	text-shadow: 1px 1px 2px rgb(116, 74, 123), 0 0 1em rgb(19, 13, 17), 0 0 0.2em blue;
+	background-image: url("123.gif");
+	background-size: 50px;
+	background-repeat: repeat;
+}
+
+.wavy{
+	position: relative;
+	top: 40px; left: 200px;
+}
+
+.wavy span{
+	position: relative;
+	top: 40px; left: 40px;
+	display: inline-block; 
+	color: #fff; 
+	font-size: 2em; 
+	text-transform: uppercase; 
+	animation: animate 4s ease-in-out infinite; 
+	animation-delay: calc(0.1s * var(--i)); 
+}
+@keyframes animate { 
+	0% { 
+		transform: translateY(0px); 
+	} 
+
+	20% { 
+		transform: translateY(-20px); 
+	} 
+
+	40%, 
+	100% { 
+		transform: translateY(0px); 
+	} 
+} 
+
+.menu-btn {
+	position: absolute;
+	z-index: 3;
+	right: 35px;
+	top: 35px;
+	cursor: pointer;
+	transition: all 0.5s ease-out;
+}
+.menu-btn .btn-line {
+	width: 28px;
+	height: 3px;
+	margin: 0 0 5px 0;
+	background: black;
+	transition: all 0.5s ease-out;
+}
+.menu-btn.close {
+	transform: rotate(180deg);
+}
+.menu-btn.close .btn-line:nth-child(1) {
+	transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-btn.close .btn-line:nth-child(2) {
+	opacity: 0;
+}
+
+.menu-btn.close .btn-line:nth-child(3) {
+	transform: rotate(-45deg) translate(7px, -6px);
+}
+.menu {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	opacity: 0.9;
+	visibility: hidden;
+}
+.menu.show {
+	visibility: visible;
+}
+
+.menu-nav {
+    display: flex; /* Change display to flex */
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center;
+    height: 100%;
+}
+
+.nav-item {
+    margin: 0 20px; /* Add some margin to separate the items */
+    list-style: none;
+    text-align: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #9932e8;
+}
+
+
+.nav-item:nth-child(1) {
+	transition-delay: 0.1s;
+}
+
+.nav-item:nth-child(2) {
+	transition-delay: 0.2s;
+}
+
+.nav-item:nth-child(3) {
+	transition-delay: 0.3s;
+}
+footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+
+

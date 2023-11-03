@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Marzhart</title>
+	<link rel="stylesheet" type="text/css" href="marzhart.css">
+</head>
+
+
+<body>
+	<h1 style="font-size:60px;">My meme gallery</h1>
+	<center><span style='font-size:100px;'>&#128129;</span></center>
+	<div class="wavy"> 
+        <span style="--i:1">O</span> 
+        <span style="--i:2">k</span> 
+        <span style="--i:3">a</span> 
+        <span style="--i:4">a</span> 
+        <span style="--i:5">a</span> 
+        <span style="--i:6">y</span> 
+        <span style="--i:7">,</span>
+		<span style="--i:9"> </span> 
+        <span style="--i:10">l</span> 
+        <span style="--i:11">e</span> 
+        <span style="--i:12">t</span> 
+        <span style="--i:13">'</span> 
+        <span style="--i:14">s</span> 
+        <span style="--i:15"> </span> 
+        <span style="--i:16">g</span> 
+        <span style="--i:17">o</span> 
+        <span style="--i:18">.</span> 
+        <span style="--i:19">.</span> 
+        <span style="--i:20">.</span> 
+        <span style="--i:21">.</span> 
+    </div>
+	<header>
+		<div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+	<nav class="menu">
+		<div class="menu-branding">
+			<div class="portrait">
+			</div>
+		</div>
+
+		<ul class="menu-nav">
+			<li class="nav-item current">
+				<a href="quien es ricardo milos.html" class="nav-link">
+					Around the World
+				</a>
+			</li>
+
+			<li class="nav-item">
+				<a href="Lamer.html" class="nav-link">
+					La Mer
+				</a>
+			</li>
+
+			<li class="nav-item">
+				<a href="tea.html" class="nav-link">
+					Tea
+				</a>
+			</li>
+
+			<li class="nav-item">
+				<a href="https://www.instagram.com/mrzhnlv/" class="nav-link">
+					Contact me
+				</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+	<footer style="text-align:right">©Marzhanart2023 </footer>
+
+<script>
+		 const menuBtn = 
+            document.querySelector(".menu-btn");
+ 
+        const menu = 
+            document.querySelector(".menu");
+ 
+        const menuNav = 
+            document.querySelector(".menu-nav");
+ 
+        const menuBranding = 
+            document.querySelector(".menu-branding");
+ 
+        const navItems = 
+            document.querySelectorAll(".nav-item");
+
+        let showMenu = false;
+ 
+        menuBtn.addEventListener("click", toggleMenu);
+ 
+        function toggleMenu() {
+            if (!showMenu) {
+                menuBtn.classList.add("close");
+                menu.classList.add("show");
+                menuNav.classList.add("show");
+                menuBranding.classList.add("show");
+                navItems.forEach((item) =>
+                    item.classList.add("show"));
+ 
+                // Reset the menu state
+                showMenu = true;
+            } else {
+                menuBtn.classList.remove("close");
+                menu.classList.remove("show");
+                menuNav.classList.remove("show");
+                menuBranding.classList.remove("show");
+                navItems.forEach((item) =>
+                    item.classList.remove("show"));
+ 
+                // Reset the menu state
+                showMenu = false;
+            }
+        }
+	</script>
+
+</body>
+</html>
